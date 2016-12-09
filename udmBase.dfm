@@ -1,5 +1,5 @@
 object dmBase: TdmBase
-  OldCreateOrder = False
+  OldCreateOrder = True
   OnCreate = DataModuleCreate
   OnDestroy = DataModuleDestroy
   Height = 446
@@ -7,12 +7,13 @@ object dmBase: TdmBase
   object cntData: TZConnection
     ControlsCodePage = cCP_UTF16
     Catalog = ''
-    HostName = 'localhost'
+    Connected = True
+    HostName = ''
     Port = 0
     Database = 'C:\AppData\SGESTION.FDB'
-    User = 'sysdba'
+    User = 'SYSDBA'
     Password = 'masterkey'
-    Protocol = 'firebird-3.0'
+    Protocol = 'firebirdd-3.0'
     Left = 24
     Top = 8
   end

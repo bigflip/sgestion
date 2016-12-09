@@ -14,29 +14,28 @@ inherited frmFamilias: TfrmFamilias
           item
             Expanded = False
             FieldName = 'NOMBRE'
-            Title.Caption = 'Nombre'
             Visible = True
           end>
       end
     end
     inherited tsEditor: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 24
+      ExplicitLeft = 8
+      ExplicitTop = 6
       ExplicitWidth = 521
       ExplicitHeight = 353
       object lblNombre: TLabel
-        Left = 3
-        Top = 6
-        Width = 37
+        Left = 8
+        Top = 16
+        Width = 42
         Height = 13
-        Caption = 'Nombre'
+        Caption = 'NOMBRE'
+        FocusControl = edtNOMBRE
       end
-      object edtNombre: TDBEdit
-        Left = 46
-        Top = 3
-        Width = 470
+      object edtNOMBRE: TDBEdit
+        Left = 3
+        Top = 35
+        Width = 394
         Height = 21
-        Anchors = [akLeft, akTop, akRight]
         DataField = 'NOMBRE'
         DataSource = dmFamilias.dsDatos
         TabOrder = 0
@@ -45,7 +44,7 @@ inherited frmFamilias: TfrmFamilias
   end
   inherited imgImagenes: TImageList
     Bitmap = {
-      494C010105000800F40020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800140120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000060606074343
@@ -1110,7 +1109,7 @@ inherited frmFamilias: TfrmFamilias
   end
   inherited imgImagenesGris: TImageList
     Bitmap = {
-      494C010105000800100120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010105000800300120002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000001010101020202037C7C7C889090
